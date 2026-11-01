@@ -1,3 +1,4 @@
+9bcf8a89a7c4d53560c323a0f579c709f93f3ab86ad5f026aca09a60727792a2  .gitattributes
 8f2de991d357978e649fbc7cacd53663aa76fb17db6b507fc0d7de5718823563  .github/workflows/ci.yml
 df2994cf8459fb8bafde420ca2af6c68d9924fa22e5c9594c2ebe67632429bc8  .gitignore
 3844c8ca92fd0efd6fdfeb9a3a6960c060ba956b79cea9fa8ca6f5965f167809  fixtures/baseline-fail.json
