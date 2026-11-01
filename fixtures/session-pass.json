@@ -1,0 +1,42 @@
+{
+  "kind": "session",
+  "samples": [
+    {
+      "exit_code": 0,
+      "free_mib": 11250,
+      "sm_clock_mhz": 1200,
+      "started_ms": 0,
+      "temperature_c": 48,
+      "used_mib": 850,
+      "utilization_pct": 75
+    },
+    {
+      "exit_code": 0,
+      "free_mib": 11250,
+      "sm_clock_mhz": 1200,
+      "started_ms": 250,
+      "temperature_c": 48,
+      "used_mib": 850,
+      "utilization_pct": 75
+    },
+    {
+      "exit_code": 0,
+      "free_mib": 11250,
+      "sm_clock_mhz": 1200,
+      "started_ms": 500,
+      "temperature_c": 48,
+      "used_mib": 850,
+      "utilization_pct": 75
+    },
+    {
+      "exit_code": 0,
+      "free_mib": 11250,
+      "sm_clock_mhz": 1200,
+      "started_ms": 750,
+      "temperature_c": 48,
+      "used_mib": 850,
+      "utilization_pct": 75
+    }
+  ],
+  "schema": "gpu-telemetry-gates/v1"
+}

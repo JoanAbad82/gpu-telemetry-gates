@@ -1,0 +1,29 @@
+name: Offline synthetic checks
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Python 3.11 / ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-2022]
+    env:
+      PYTHONPATH: src
+      PYTHONDONTWRITEBYTECODE: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Verify synthetic fixtures (no devices)
+        run: python scripts/generate_fixtures.py --check
+      - name: Run offline standard-library unit tests
+        run: python -m unittest discover -s tests -v
