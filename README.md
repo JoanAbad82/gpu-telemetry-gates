@@ -2,9 +2,12 @@
 
 Deterministic, offline validation of *normalized* GPU telemetry records.
 
-**Status:** isolated publication candidate; not released. The source and fixture
-files contain no real GPU measurements. This library **does not** query
-`nvidia-smi`, access devices, run CUDA, execute FFTs, or benchmark anything.
+**Status:** Public, MIT-licensed Python utility. No tagged release yet. The source
+and synthetic fixtures contain no real GPU measurements. This library **does not**
+query `nvidia-smi`, access devices, run CUDA, execute FFTs, or benchmark anything.
+
+**Verified CI:** 22 synthetic tests passed on Windows Server 2022 and Ubuntu 24.04
+([GitHub Actions evidence](https://github.com/JoanAbad82/gpu-telemetry-gates/actions/runs/41346516226)).
 
 ## What it does
 
